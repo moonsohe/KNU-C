@@ -3,14 +3,14 @@
 int main()
 {
 	int year,a;
-	printf("³âµµ ÀÔ·Â :");
+	printf("ë…„ë„ ì…ë ¥ :");
 	scanf_s("%d", &year);
 
 if((year%4==0 && year%100!=0) || year % 400 == 0)
-	printf("À±³âÀÔ´Ï´Ù\n");
+	printf("ìœ¤ë…„ì…ë‹ˆë‹¤\n");
 
 else
-printf("À±³âÀÌ ¾Æ´Õ´Ï´Ù\n");
+printf("ìœ¤ë…„ì´ ì•„ë‹™ë‹ˆë‹¤\n");
 
 	return 0;
-}
+} 
