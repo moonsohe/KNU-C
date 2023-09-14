@@ -5,14 +5,14 @@ int main(void)
 	char ch;
 	char str[10];
 
-	printf("1. ¹®ÀÚ ÀÔ·Â:");
+	printf("1. ë¬¸ì ì…ë ¥:");
 	scanf_s("%c", &ch, sizeof(ch));
 
-	printf("2.¹®ÀÚ¿­ ÀÔ·Â:");
+	printf("2.ë¬¸ìì—´ ì…ë ¥:");
 	scanf_s("%s", str, sizeof(str));
 
-	printf("ÀÔ·ÂÇÑ ¹®ÀÚ Ãâ·Â:%c\n", ch);
-	printf("ÀÔ·ÂÇÑ ¹®ÀÚ¿­ Ãâ·Â:%s\n", str);
+	printf("ì…ë ¥í•œ ë¬¸ì ì¶œë ¥:%c\n", ch);
+	printf("ì…ë ¥í•œ ë¬¸ìì—´ ì¶œë ¥:%s\n", str);
 	
 	return 0;
-}
+} 
