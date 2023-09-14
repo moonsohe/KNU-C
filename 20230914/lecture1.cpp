@@ -5,9 +5,9 @@ int main(void)
 {
 	int num;
 
-	printf("Á¤¼ö ÀÔ·Â:");
+	printf("ì •ìˆ˜ ì…ë ¥:");
 	scanf_s("%d", &num);
-	printf("Å°º¸µå·Î ÀÔ·Â¹ŞÀº Á¤¼ö´Â %dÀÔ´Ï´Ù\n", num);
+	printf("í‚¤ë³´ë“œë¡œ ì…ë ¥ë°›ì€ ì •ìˆ˜ëŠ” %dì…ë‹ˆë‹¤\n", num);
 
 	return 0;
 }
