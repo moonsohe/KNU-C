@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+int main(void)
 {
 	int val_1, val_2, a, b;
 
