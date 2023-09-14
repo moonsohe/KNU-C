@@ -9,11 +9,11 @@ int main()
 
 	
 		if (num > 0)
-			printf("양의 정수입니다\n");
+			printf("%d는 양의 정수입니다\n");
 		else if (num < 0)
-			printf("음의 정수입니다\n");
+			printf("%d는 음의 정수입니다\n");
 		else
-			printf("0입니다\n");
+			printf("%d는 0입니다\n");
 
 		return 0;
 }
