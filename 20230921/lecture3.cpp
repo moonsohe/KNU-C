@@ -1,14 +1,12 @@
 #include<stdio.h>
 
 int acc(int num) {
-	int result = 0;
 
-	if (num == 0) {
+	if (num == 0) 
 		return 1;
-	}
-	result = num * acc(num - 1);
+	
+	return num * acc(num - 1);
 
-	return result;
 }
 
 int main()
