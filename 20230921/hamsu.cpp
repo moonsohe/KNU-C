@@ -4,11 +4,9 @@ int add(int num) {
 	int di;
 	for (di = num - 1; di > 1; di--) {
 		if (num % di == 0)
-			//printf("해당 수는 소수가 아닙니다");
 		return 0;
 	}
 	return 1;
-		//printf("해당 수는 소수입니다");
 }
 
 int main(void)
