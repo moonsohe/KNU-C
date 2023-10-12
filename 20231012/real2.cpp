@@ -8,14 +8,18 @@ void swap(int* a, int* b)
 
 
 void sort(int *brr) {
-	for (int k = 0; k < 4; k++) {
-		for (int i = 0; i < 4-k; i++) {
-			if (brr[i] > brr[i + 1]) {
-				swap(&brr[i], &brr[i + 1]);
-			}
+	for (int k = 0; k < 5; k++) {
+		int minidx = k;
+		for (int i = k+1; i < 5; i++) {
+			if (brr[i] < brr[minidx]) {
+				minidx = i;
+			} 
 		}
+		swap(&brr[k], &brr[minidx]);
 	}
 }
+
+
 int main() {
 	int arr[5] = { 1,6,10,3,5 };
 	for (int i = 0; i < 5; i++)
