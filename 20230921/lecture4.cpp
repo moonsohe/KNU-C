@@ -36,6 +36,7 @@ int main() {
 
     double pi = 4.0 * circle / points;
     double percent = (double)points / points * 100.0;
+    
     printf("원주율: %f ", pi);
 
     printf("\n");
