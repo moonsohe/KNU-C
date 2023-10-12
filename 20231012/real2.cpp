@@ -18,6 +18,9 @@ void sort(int *brr) {
 }
 int main() {
 	int arr[5] = { 1,6,10,3,5 };
+	for (int i = 0; i < 5; i++)
+		printf("%d ", arr[i]);
+	printf("\n");
 
 	sort(arr);
 	for (int i = 0; i < 5; i++)
