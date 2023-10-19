@@ -19,6 +19,7 @@ void sort(int* arr, int len)
 			}
 		}
 		swap(arr + i, arr + min_idx);
+		// swap(&arr[i], &arr[min_idx]);
 	}
 }
 int main() {
