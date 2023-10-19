@@ -41,7 +41,17 @@ void delete_node_first(NODE* head) {
 	free(head->next);
 	// x 다음에 6이였니까 넥스트2번해서 1 가기
 	head->next = p;
+}
 
+void delate_node_last(NODE* head) {
+	NODE* p = head;
+	NODE* p_prev = head;
+	while (p->next != NULL) {
+		p_prev = p;
+		p = p->next;
+	}
+	free(p);
+	p_prev->next = NULL;
 }
 
 int main() {
@@ -57,11 +67,11 @@ int main() {
 	NODE* n2 = (NODE*)malloc(sizeof(NODE));;
 	n2->data = 2;
 	n2->next = n1->next;
-	head->next = n2;
+	n1->next = n2;
 
 	NODE* n3 = (NODE*)malloc(sizeof(NODE));;
 	n3->data = 3;
-	n3->next = n1->next;
+	n3->next = n2->next;
 	n2->next = n3;
 
 	print_list(head);
@@ -70,10 +80,16 @@ int main() {
 	insert_node(head, 5);
 	print_list(head);
 
-	insert_node(head, 6);
+	insert_node_first(head, 6);
 	print_list(head);
 
 	delete_node_first(head);
+	print_list(head);
+	delete_node_first(head);
+	print_list(head);
+
+	delate_node_last(head);
+	print_list(head);
 
 	return 0;
 }
