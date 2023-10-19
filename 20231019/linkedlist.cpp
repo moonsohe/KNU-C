@@ -13,8 +13,9 @@ void print_list(NODE* head) {
 		printf("%d ", p->data);
 		p = p->next;
 	}
-	
+	printf("\n");
 }
+
 
 void insert_node(NODE* head, int data) {
 	NODE* p = head;
@@ -26,6 +27,21 @@ void insert_node(NODE* head, int data) {
 	new_node->data = data;
 	new_node->next = p->next;
 	p->next = new_node;
+}
+
+void insert_node_first(NODE* head, int data) {
+	NODE* new_node = (NODE*)malloc(sizeof(NODE));
+	new_node->data = data;
+	new_node->next = head->next;
+	head->next = new_node;
+}
+
+void delete_node_first(NODE* head) {
+	NODE * p = head->next->next;
+	free(head->next);
+	// x 다음에 6이였니까 넥스트2번해서 1 가기
+	head->next = p;
+
 }
 
 int main() {
@@ -48,10 +64,16 @@ int main() {
 	n3->next = n1->next;
 	n2->next = n3;
 
+	print_list(head);
+
 	insert_node(head, 4);
 	insert_node(head, 5);
-
 	print_list(head);
+
+	insert_node(head, 6);
+	print_list(head);
+
+	delete_node_first(head);
 
 	return 0;
 }
